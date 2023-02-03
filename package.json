@@ -1,0 +1,20 @@
+{
+  "name": "pure-admin-micro",
+  "version": "1.0.0",
+  "description": "vue-pure-admin官方微前端",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm -F @micro-app/* run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pure-admin/pure-admin-micro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pure-admin/pure-admin-micro/issues"
+  },
+  "homepage": "https://github.com/pure-admin/pure-admin-micro#readme"
+}
