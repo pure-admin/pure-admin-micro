@@ -12,6 +12,7 @@ importers:
       '@iconify-icons/ep': ^1.2.7
       '@iconify-icons/ri': ^1.2.3
       '@iconify/vue': ^4.0.0
+      '@micro-zoe/micro-app': ^0.8.10
       '@pureadmin/descriptions': ^1.1.0
       '@pureadmin/table': ^1.9.0
       '@pureadmin/theme': ^3.0.0
@@ -34,6 +35,7 @@ importers:
       autoprefixer: ^10.4.13
       axios: ^1.2.0
       cloc: ^2.10.0
+      cross-env: ^7.0.3
       cssnano: ^5.1.14
       dayjs: ^1.11.6
       echarts: ^5.4.0
@@ -81,11 +83,13 @@ importers:
       vite-plugin-remove-console: ^1.3.0
       vite-svg-loader: ^3.6.0
       vue: ^3.2.45
+      vue-demi: ^0.13.11
       vue-eslint-parser: ^9.1.0
       vue-router: ^4.1.6
       vue-tsc: ^1.0.9
       vue-types: ^4.2.1
     dependencies:
+      '@micro-zoe/micro-app': 0.8.10
       '@pureadmin/descriptions': 1.1.1_element-plus@2.2.29
       '@pureadmin/table': 1.9.0_element-plus@2.2.29
       '@pureadmin/utils': 1.8.5_echarts@5.4.1+vue@3.2.47
@@ -106,6 +110,7 @@ importers:
       qs: 6.11.0
       responsive-storage: 2.1.0
       vue: 3.2.47
+      vue-demi: 0.13.11_vue@3.2.47
       vue-router: 4.1.6_vue@3.2.47
       vue-types: 4.2.1_vue@3.2.47
     devDependencies:
@@ -129,6 +134,7 @@ importers:
       '@vue/eslint-config-typescript': 11.0.2_tf6rgb5i7kw5m4rbu3ajzgw7l4
       autoprefixer: 10.4.13_postcss@8.4.21
       cloc: 2.11.0
+      cross-env: 7.0.3
       cssnano: 5.1.14_postcss@8.4.21
       eslint: 8.33.0
       eslint-plugin-prettier: 4.2.1_6xprzernlpxwjedpj2snzq4bpq
@@ -1978,6 +1984,10 @@ packages:
   /@leichtgewicht/ip-codec/2.0.4:
     resolution: {integrity: sha512-Hcv+nVC0kZnQ3tD9GVu5xSMR4VVYOteQIr/hwFPVEvPdlXqgGEuRjiheChHgdM+JyqdgNcmzZOX/tnl0JOiI7A==}
     dev: true
+
+  /@micro-zoe/micro-app/0.8.10:
+    resolution: {integrity: sha512-Zb1G5UrOAEHhiAlanzHJiBlRFHMd4+C/Q5jkwTM991R7blb1F6uGY47pmcunzHns48Kj6k9v2+CLsozGyhQmyw==}
+    dev: false
 
   /@nicolo-ribaudo/eslint-scope-5-internals/5.1.1-v1:
     resolution: {integrity: sha512-54/JRvkLIzzDWshCWfuhadfrfZVPiElY8Fcgmg1HroEly/EDSszzhBAsarCux+D/kOslTRquNzuyGSmUSTTHGg==}
@@ -4423,6 +4433,14 @@ packages:
 
   /create-require/1.1.1:
     resolution: {integrity: sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==}
+    dev: true
+
+  /cross-env/7.0.3:
+    resolution: {integrity: sha512-+/HKd6EgcQCJGh2PSjZuUitQBQynKor4wrFbRg4DtAgS1aWO+gU52xpH7M9ScGgXSYmAVS9bIJ8EzuaGw0oNAw==}
+    engines: {node: '>=10.14', npm: '>=6', yarn: '>=1'}
+    hasBin: true
+    dependencies:
+      cross-spawn: 7.0.3
     dev: true
 
   /cross-spawn/5.1.0:

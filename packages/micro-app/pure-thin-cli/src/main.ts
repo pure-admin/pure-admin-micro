@@ -4,6 +4,7 @@ import { setupStore } from "@/store";
 import ElementPlus from "element-plus";
 import { getServerConfig } from "./config";
 import { createApp, Directive } from "vue";
+import microApp from "@micro-zoe/micro-app";
 import { MotionPlugin } from "@vueuse/motion";
 // import { useEcharts } from "@/plugins/echarts";
 import { injectResponsiveStorage } from "@/utils/responsive";
@@ -55,3 +56,5 @@ getServerConfig(app).then(async config => {
   // .use(PureDescriptions);
   app.mount("#app");
 });
+
+microApp.start();
