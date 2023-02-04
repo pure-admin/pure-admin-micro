@@ -1,20 +1,28 @@
 {
   "name": "pure-admin-micro",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "vue-pure-admin官方微前端",
   "main": "index.js",
   "scripts": {
-    "dev": "pnpm -F @micro-app/* run dev"
+    "micro-app:dev": "pnpm -F @micro-app/* run dev",
+    "qiankun:dev": "pnpm -F @qiankun/* run dev",
+    "wujie:dev": "pnpm -F @wujie/* run dev",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pure-admin/pure-admin-micro.git"
   },
-  "keywords": [],
-  "author": "",
+  "author": "pure-admin",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/pure-admin/pure-admin-micro/issues"
   },
-  "homepage": "https://github.com/pure-admin/pure-admin-micro#readme"
+  "homepage": "https://github.com/pure-admin/pure-admin-micro#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
+    "@esbuild-kit/cjs-loader": "^2.4.1",
+    "husky": "^8.0.3"
+  }
 }
