@@ -8,11 +8,13 @@ importers:
       '@commitlint/config-conventional': ^17.4.2
       '@esbuild-kit/cjs-loader': ^2.4.1
       husky: ^8.0.3
+      rimraf: 3.0.2
     devDependencies:
       '@commitlint/cli': 17.4.2
       '@commitlint/config-conventional': 17.4.2
       '@esbuild-kit/cjs-loader': 2.4.1
       husky: 8.0.3
+      rimraf: 3.0.2
 
   packages/main-apps/pure-admin-micro-app:
     specifiers:
@@ -481,7 +483,7 @@ importers:
       vue-eslint-parser: 9.1.0_eslint@8.33.0
       vue-tsc: 1.0.24_typescript@4.9.5
 
-  packages/sub-apps/vue2:
+  packages/sub-apps/micro-app/vue2:
     specifiers:
       '@babel/core': ^7.12.16
       '@babel/eslint-parser': ^7.12.16
@@ -506,7 +508,7 @@ importers:
       eslint-plugin-vue: 8.7.1_eslint@7.32.0
       vue-template-compiler: 2.7.14
 
-  packages/sub-apps/vue3:
+  packages/sub-apps/micro-app/vue3:
     specifiers:
       '@babel/core': ^7.12.16
       '@babel/eslint-parser': ^7.12.16
@@ -529,7 +531,125 @@ importers:
       eslint: 7.32.0
       eslint-plugin-vue: 8.7.1_eslint@7.32.0
 
-  packages/sub-apps/vue3-vite:
+  packages/sub-apps/micro-app/vue3-vite:
+    specifiers:
+      '@vitejs/plugin-vue': ^4.0.0
+      vite: ^4.0.0
+      vue: ^3.2.45
+    dependencies:
+      vue: 3.2.47
+    devDependencies:
+      '@vitejs/plugin-vue': 4.0.0_vite@4.1.1+vue@3.2.47
+      vite: 4.1.1
+
+  packages/sub-apps/qiankun/vue2:
+    specifiers:
+      '@babel/core': ^7.12.16
+      '@babel/eslint-parser': ^7.12.16
+      '@vue/cli-plugin-babel': ~5.0.0
+      '@vue/cli-plugin-eslint': ~5.0.0
+      '@vue/cli-service': ~5.0.0
+      core-js: ^3.8.3
+      eslint: ^7.32.0
+      eslint-plugin-vue: ^8.0.3
+      vue: ^2.6.14
+      vue-template-compiler: ^2.6.14
+    dependencies:
+      core-js: 3.27.2
+      vue: 2.7.14
+    devDependencies:
+      '@babel/core': 7.20.12
+      '@babel/eslint-parser': 7.19.1_go3kp2l7mdrkdyt3xfyeu7ppfa
+      '@vue/cli-plugin-babel': 5.0.8_qytlyiexgq72haek7ijdsrdwje
+      '@vue/cli-plugin-eslint': 5.0.8_yvnkslq6l73c7sesu7e5hzum2a
+      '@vue/cli-service': 5.0.8_3vxek7nnw77fnzqahcoxmafvnm
+      eslint: 7.32.0
+      eslint-plugin-vue: 8.7.1_eslint@7.32.0
+      vue-template-compiler: 2.7.14
+
+  packages/sub-apps/qiankun/vue3:
+    specifiers:
+      '@babel/core': ^7.12.16
+      '@babel/eslint-parser': ^7.12.16
+      '@vue/cli-plugin-babel': ~5.0.0
+      '@vue/cli-plugin-eslint': ~5.0.0
+      '@vue/cli-service': ~5.0.0
+      core-js: ^3.8.3
+      eslint: ^7.32.0
+      eslint-plugin-vue: ^8.0.3
+      vue: ^3.2.13
+    dependencies:
+      core-js: 3.27.2
+      vue: 3.2.47
+    devDependencies:
+      '@babel/core': 7.20.12
+      '@babel/eslint-parser': 7.19.1_go3kp2l7mdrkdyt3xfyeu7ppfa
+      '@vue/cli-plugin-babel': 5.0.8_7ph6shlzjohpivu3kkpbskat2a
+      '@vue/cli-plugin-eslint': 5.0.8_yvnkslq6l73c7sesu7e5hzum2a
+      '@vue/cli-service': 5.0.8_lsnshyx3pfclaei7epksi24z5y
+      eslint: 7.32.0
+      eslint-plugin-vue: 8.7.1_eslint@7.32.0
+
+  packages/sub-apps/qiankun/vue3-vite:
+    specifiers:
+      '@vitejs/plugin-vue': ^4.0.0
+      vite: ^4.0.0
+      vue: ^3.2.45
+    dependencies:
+      vue: 3.2.47
+    devDependencies:
+      '@vitejs/plugin-vue': 4.0.0_vite@4.1.1+vue@3.2.47
+      vite: 4.1.1
+
+  packages/sub-apps/wujie/vue2:
+    specifiers:
+      '@babel/core': ^7.12.16
+      '@babel/eslint-parser': ^7.12.16
+      '@vue/cli-plugin-babel': ~5.0.0
+      '@vue/cli-plugin-eslint': ~5.0.0
+      '@vue/cli-service': ~5.0.0
+      core-js: ^3.8.3
+      eslint: ^7.32.0
+      eslint-plugin-vue: ^8.0.3
+      vue: ^2.6.14
+      vue-template-compiler: ^2.6.14
+    dependencies:
+      core-js: 3.27.2
+      vue: 2.7.14
+    devDependencies:
+      '@babel/core': 7.20.12
+      '@babel/eslint-parser': 7.19.1_go3kp2l7mdrkdyt3xfyeu7ppfa
+      '@vue/cli-plugin-babel': 5.0.8_qytlyiexgq72haek7ijdsrdwje
+      '@vue/cli-plugin-eslint': 5.0.8_yvnkslq6l73c7sesu7e5hzum2a
+      '@vue/cli-service': 5.0.8_3vxek7nnw77fnzqahcoxmafvnm
+      eslint: 7.32.0
+      eslint-plugin-vue: 8.7.1_eslint@7.32.0
+      vue-template-compiler: 2.7.14
+
+  packages/sub-apps/wujie/vue3:
+    specifiers:
+      '@babel/core': ^7.12.16
+      '@babel/eslint-parser': ^7.12.16
+      '@vue/cli-plugin-babel': ~5.0.0
+      '@vue/cli-plugin-eslint': ~5.0.0
+      '@vue/cli-service': ~5.0.0
+      core-js: ^3.8.3
+      eslint: ^7.32.0
+      eslint-plugin-vue: ^8.0.3
+      vue: ^3.2.13
+    dependencies:
+      core-js: 3.27.2
+      vue: 3.2.47
+    devDependencies:
+      '@babel/core': 7.20.12
+      '@babel/eslint-parser': 7.19.1_go3kp2l7mdrkdyt3xfyeu7ppfa
+      '@vue/cli-plugin-babel': 5.0.8_7ph6shlzjohpivu3kkpbskat2a
+      '@vue/cli-plugin-eslint': 5.0.8_yvnkslq6l73c7sesu7e5hzum2a
+      '@vue/cli-service': 5.0.8_lsnshyx3pfclaei7epksi24z5y
+      eslint: 7.32.0
+      eslint-plugin-vue: 8.7.1_eslint@7.32.0
+
+  packages/sub-apps/wujie/vue3-vite:
     specifiers:
       '@vitejs/plugin-vue': ^4.0.0
       vite: ^4.0.0
@@ -2609,7 +2729,7 @@ packages:
     resolution: {integrity: sha512-9K4zoImiZc3HlIp6AVUDE4CWYx22a+lhSZMYNpbjW04+YF0KWj4pJXnEMjdnFTiQibFFmElcsasJXDbdI/EPhA==}
     dependencies:
       '@types/eslint': 8.21.0
-      '@types/estree': 0.0.51
+      '@types/estree': 1.0.0
     dev: true
 
   /@types/eslint/8.21.0:

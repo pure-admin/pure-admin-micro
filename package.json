@@ -7,6 +7,7 @@
     "micro-app:dev": "pnpm -F @micro-app/* run dev",
     "qiankun:dev": "pnpm -F @qiankun/* run dev",
     "wujie:dev": "pnpm -F @wujie/* run dev",
+    "clean:node_modules": "bash clean.sh",
     "prepare": "husky install"
   },
   "repository": {
@@ -23,6 +24,7 @@
     "@commitlint/cli": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.2",
     "@esbuild-kit/cjs-loader": "^2.4.1",
-    "husky": "^8.0.3"
+    "husky": "^8.0.3",
+    "rimraf": "3.0.2"
   }
 }
