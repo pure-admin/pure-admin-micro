@@ -58,20 +58,20 @@ pnpm win:clean:node_modules
 │   │   ├── pure-admin-wujie          # wujie micro frontend framework version
 │   ├── sub-apps                      # sub-apps, micro-apps
 │   │   ├── micro-app                 # MicroApp micro frontend framework version
-│   │   │   ├── react                 # react application
+│   │   │   ├── react-vite            # react-vite application
 │   │   │   ├── vue2                  # vue2 application
 │   │   │   ├── vue3                  # vue3 application
 │   │   │   ├── vue3-vite             # vue3-vite application
 │   │   ├── qiankun                   # qiankun micro frontend framework version
-│   │   │   ├── react                 # react application
+│   │   │   ├── react-vite            # react-vite application
 │   │   │   ├── vue2                  # vue2 application
 │   │   │   ├── vue3                  # vue3 application
 │   │   │   ├── vue3-vite             # vue3-vite application
 │   │   ├── wujie                     # wujie micro frontend framework version
-│   │   │   ├── react                 # react application
+│   │   │   ├── react-vite            # react-vite application
 │   │   │   ├── vue2                  # vue2 application
 │   │   │   ├── vue3                  # vue3 application
 │   │   │   ├── vue3-vite             # vue3-vite application
 ```
 
-Main application and base application are developed using [pure-admin-thin](https://github.com/xiaoxian521/pure-admin-thin), sub-applications and micro-applications provide `react`, `vue2`, `vue3` , `vue3-vite` version demo
+Main application and base application are developed using [pure-admin-thin](https://github.com/xiaoxian521/pure-admin-thin), sub-applications and micro-applications provide `react-vite`, `vue2`, `vue3` , `vue3-vite` version demo

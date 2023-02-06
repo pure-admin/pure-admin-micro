@@ -58,20 +58,20 @@ pnpm win:clean:node_modules
 │   │   ├── pure-admin-wujie          # wujie 微前端框架版本
 │   ├── sub-apps                      # 子应用、微应用
 │   │   ├── micro-app                 # MicroApp 微前端框架版本
-│   │   │   ├── react                 # react 应用
+│   │   │   ├── react-vite            # react-vite 应用
 │   │   │   ├── vue2                  # vue2 应用
 │   │   │   ├── vue3                  # vue3 应用
 │   │   │   ├── vue3-vite             # vue3-vite 应用
 │   │   ├── qiankun                   # qiankun 微前端框架版本
-│   │   │   ├── react                 # react 应用
+│   │   │   ├── react-vite            # react-vite 应用
 │   │   │   ├── vue2                  # vue2 应用
 │   │   │   ├── vue3                  # vue3 应用
 │   │   │   ├── vue3-vite             # vue3-vite 应用
 │   │   ├── wujie                     # wujie 微前端框架版本
-│   │   │   ├── react                 # react 应用
+│   │   │   ├── react-vite            # react-vite 应用
 │   │   │   ├── vue2                  # vue2 应用
 │   │   │   ├── vue3                  # vue3 应用
 │   │   │   ├── vue3-vite             # vue3-vite 应用
 ```
 
-主应用、基座应用使用 [pure-admin-thin](https://github.com/xiaoxian521/pure-admin-thin) 开发，子应用、微应用提供 `react`、`vue2`、`vue3`、`vue3-vite` 版本演示
+主应用、基座应用使用 [pure-admin-thin](https://github.com/xiaoxian521/pure-admin-thin) 开发，子应用、微应用提供 `react-vite`、`vue2`、`vue3`、`vue3-vite` 版本演示
