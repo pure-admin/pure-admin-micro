@@ -7,7 +7,8 @@
     "micro-app:dev": "pnpm -F @micro-app/* run dev",
     "qiankun:dev": "pnpm -F @qiankun/* run dev",
     "wujie:dev": "pnpm -F @wujie/* run dev",
-    "clean:node_modules": "bash clean.sh",
+    "linux:clean:node_modules": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +",
+    "win:clean:node_modules": "FOR /d /r . %d in (node_modules) DO @IF EXIST '%d' rmdir /s /q '%d'",
     "prepare": "husky install"
   },
   "repository": {
