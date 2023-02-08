@@ -9,4 +9,4 @@ Vue.config.ignoredElements = [
 
 new Vue({
   render: h => h(App),
-}).$mount('#app')
+}).$mount('#vue2-app')

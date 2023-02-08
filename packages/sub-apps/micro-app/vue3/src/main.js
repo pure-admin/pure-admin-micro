@@ -2,4 +2,4 @@ import './public-path'
 import { createApp } from 'vue'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+createApp(App).mount('#vue3-app')
