@@ -1,5 +1,7 @@
 <h1>pure-admin-micro</h1>
 
+# in development...
+
 **English** | [中文](./README.md)
 
 ## Introduction

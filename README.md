@@ -1,5 +1,7 @@
 <h1>pure-admin-micro</h1>
 
+# 正在开发中...
+
 **中文** | [English](./README.en-US.md)
 
 ## 简介
