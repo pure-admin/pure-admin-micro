@@ -1,5 +1,5 @@
 <template>
-  <h1>vue2应用</h1>
+  <h1 class="app">vue2应用</h1>
 </template>
 
 <script>
@@ -9,7 +9,7 @@ export default {
 </script>
 
 <style>
-#app {
+.app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

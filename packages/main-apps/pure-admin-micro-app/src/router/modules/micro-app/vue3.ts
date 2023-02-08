@@ -6,9 +6,9 @@ export default {
   },
   children: [
     {
-      path: "/micro/index",
-      name: "MicroIndex",
-      component: () => import("@/views/micro/index.vue"),
+      path: "/micro/vue3",
+      name: "MicroVue3",
+      component: () => import("@/views/micro/vue3.vue"),
       meta: {
         title: "vue3应用"
       }
