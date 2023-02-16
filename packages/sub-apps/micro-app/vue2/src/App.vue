@@ -1,4 +1,4 @@
-<!-- TODO vue2作为子应用时，根元素不渲染，故嵌套一层根元素 -->
+<!-- TODO vue-cli创建vue2应用时，根元素不渲染，故嵌套一层根元素 -->
 <template>
   <div id="vue2-app">
     <h1>vue2应用</h1>

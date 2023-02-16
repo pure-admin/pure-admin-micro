@@ -57,4 +57,23 @@ getServerConfig(app).then(async config => {
   app.mount("#app");
 });
 
-microApp.start();
+const loaders = [
+  {
+    loader(code: string) {
+      if (process.env.NODE_ENV === "development") {
+        code = code.replace(/(from|import)(\s*['"])(\/vite\/)/g, all => {
+          return all.replace("/vite/", "http://localhost:8082/vite/");
+        });
+      }
+      return code;
+    }
+  }
+];
+
+microApp.start({
+  plugins: {
+    modules: {
+      "vue3-vite": loaders
+    }
+  }
+});
