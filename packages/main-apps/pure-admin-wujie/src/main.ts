@@ -1,5 +1,6 @@
 import App from "./App.vue";
 import router from "./router";
+import WujieVue from "wujie-vue3";
 import { setupStore } from "@/store";
 import ElementPlus from "element-plus";
 import { getServerConfig } from "./config";
@@ -55,3 +56,13 @@ getServerConfig(app).then(async config => {
   // .use(PureDescriptions);
   app.mount("#app");
 });
+
+const { setupApp } = WujieVue;
+
+setupApp({
+  name: "vue3",
+  url: "//localhost:8090/",
+  alive: true
+});
+
+app.use(WujieVue);
