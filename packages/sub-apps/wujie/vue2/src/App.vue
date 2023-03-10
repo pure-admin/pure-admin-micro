@@ -1,5 +1,7 @@
 <template>
-  <h1>vue2应用</h1>
+  <div id="app">
+    <h1>vue2应用</h1>
+  </div>
 </template>
 
 <script>
