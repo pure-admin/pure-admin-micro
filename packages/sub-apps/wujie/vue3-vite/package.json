@@ -1,5 +1,5 @@
 {
-  "name": "vue-project",
+  "name": "@wujie/vue3-vite",
   "version": "0.0.0",
   "private": true,
   "scripts": {
