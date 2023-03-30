@@ -70,10 +70,24 @@ const loaders = [
   }
 ];
 
+const reactLoaders = [
+  {
+    loader(code: string) {
+      if (process.env.NODE_ENV === "development") {
+        code = code.replace(/(from|import)(\s*['"])(\/vite\/)/g, all => {
+          return all.replace("/vite/", "http://localhost:8083/vite/");
+        });
+      }
+      return code;
+    }
+  }
+];
+
 microApp.start({
   plugins: {
     modules: {
-      "vue3-vite": loaders
+      "vue3-vite": loaders,
+      "react-vite": reactLoaders
     }
   }
 });
